@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <style>
+        #map {
+          height: 600px;
+          width: 800px;        
+        }
+      </style>
+</head>
+<body>
+    <h2>Drop us a email</h2>
+    <div id="map"></div>
+    <script>
+        function initMap() {
+          var options = {
+            zoom: 15,
+            center: { lat: 25.218460, lng: 55.279171 },
+          };
+          var map = new google.maps.Map(document.getElementById('map'), options);
+          var marker = new google.maps.Marker({
+            position: { lat: 25.218460, lng: 55.279171 },
+            map: map,
+          });
+        }
+      </script>
+    
+      <script defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbBTsw3a0xr_gDG89PMwd99dpxoE-y45A&callback=initMap">
+          </script>
+    <div id="form">
+        <section id="condet">
+            <p> A genial travel partner in the heart of Greater Dubai.</p>
+            <p>Hot-line: +971-50-500-6580</p>
+            <p> E-mail: info@beachwalks.ae </p>
+            <p> Fax: +971-40-215-9632 </p>
+        </section>    
+    <form id="form" action="#" onsubmit= "return myfunc()">
+        <h4>Want to know more? Drop us a email!! </h4>
+       
+            
+
+                
+                    <div class="grid-container2">
+                        <div><input type="text" id="fname" placeholder="First name"><p id="firname"></p></div>
+                        <div><input type="text" id="lname" placeholder="Last name"><p id="lasname"></p></div>
+                        <div><input type="text" id="mobile" placeholder="Contact number"><p id="cntno"></p></div>
+                        <div><input type="text" id="email" placeholder="E-mail" name="Email"><p id="maile"></p></div>
+                     
+                        <div><textarea name="textbox" id="tbox" cols="52" rows="10" placeholder="Your message here..."></textarea></div>
+                    </div>
+            
+         
+    <button type="submit" id="submit">SEND</button>
+   
+    </form>
+</div>
+<script src="contact.js"></script>
+    <link rel="stylesheet" href="contact.css">
+</body>
+</html>

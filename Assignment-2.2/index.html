@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro_Page</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/cceca3d380.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="index.js"></script>
+    
+ </head>
+ <body>
+  <nav id="top" class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Beach Walks</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#" >Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">AboutUs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#port">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#teams">Team</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"role="button" data-bs-toggle="dropdown" aria-expanded="false" onclick="myFunction()">
+              Services
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#" onclick="myFunction()">Accomdation</a></li>
+              <li><a class="dropdown-item" href="#" onclick="myFunction()">Travel & Transit</a></li>
+              <li><a class="dropdown-item" href="#" onclick="myFunction()">Meals</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">
+Contact</a>
+          </li>
+          <li class="nav-item">
+            <!-- <a class="nav-link" href="#"> <button id="started" onmouseover="changeColor()">Get Started</button></a> -->
+            <button id="getbut" onmouseover="changeButton()">Get Started</button>
+
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <fieldset class="welcome">
+    <section class="welcome py-5 my-lg-5">
+      <div class="container">
+          <div class="row welcome_grids">
+              <div class="col-lg-7 mb-lg-0 mb-5">
+                  <h3 class="mb-3 text-capitalize">Better trip experince <br> with Beach Walks!</h3>
+                  <p class="my-2 initial font-italic"> We are team of talented trip oragnizers making your journey <br>beside full of joy. To make a boundless outing,  join with our <br> company along exciting promotions!  </p>
+                  <button class="start" >Get Started</button>
+              </div>
+              <div class="col-lg-5 welcome_right">
+                  <img src="Images/dubai001.jpg" alt="Dubai_Iamge" class="img-fluid">
+              </div>
+            </div>
+      </div>
+  </section>
+  </fieldset>
+<fieldset id="folio">
+  <div><img src="Images/dubai_tourism1.jpg" alt="Dubai_Tourism" width="300" height="200" id="img1" onmouseover="zoomImg(this)" onmouseout="defaultImg(this)"></div>
+  <div id="make"><h6>Make Your holiday journey along  sweet <br>memories.Hurry Up! to get connected with us:)</h6>
+    The World has been opened to explore more interesting things <br>and Many tourists have been entered to joy the beauty of world!
+    <div class="grid-container">
+      <div><i class="fa-solid fa-plane-circle-check"></i></div>
+      <div><i class="fa-solid fa-map-location"></i></div>
+      <div>We have secured flight partners to <br>make your journey safe. </div>  
+      <div>We have several travel plans to <br> explore more around the gulf.</div>
+    </div>
+  </div>
+</fieldset>
+
+<fieldset id="ports">
+  <div class="main">
+
+    <h5 style="text-align: center;">Portfolio</h5>
+    <h4 style="text-align: center;">Check Out at Out Beautiful Portfolio</h4>
+    <hr width="4%">
+    
+    <div id="myBtnContainer">
+      <button class="btn active" onclick="filterSelection('all')"> All</button>
+      <button class="btn" onclick="filterSelection('landmark')"> Hotels</button>
+      <button class="btn" onclick="filterSelection('hotel')"> Landmarks</button>
+      <button class="btn" onclick="filterSelection('expo')"> Expo</button>
+    </div>
+    
+    <!-- Portfolio Gallery Grid -->
+    <div class="row">
+      <div class="column landmark">
+        <div class="content">
+          <img src="Images2/img4.jpg" alt="Mountains" width="300" height="200">
+        </div>
+      </div>
+      <div class="column landmark">
+        <div class="content">
+        <img src="Images2/img2.jpg" alt="Lights" width="300" height="200">
+        </div>
+      </div>
+      <div class="column landmark">
+        <div class="content">
+        <img src="Images2/img3.jpg" alt="Nature" width="300" height="200">
+        </div>
+      </div>
+      
+      <div class="column hotel">
+        <div class="content">
+          <img src="Images2/img1.jpg" alt="Car" width="300" height="200">
+        </div>
+      </div>
+      <div class="column hotel">
+        <div class="content">
+        <img src="Images2/img5.jpg" alt="Car" width="300" height="200">
+        </div>
+      </div>
+      <div class="column hotel">
+        <div class="content">
+        <img src="Images2/img6.jpeg" alt="Car" width="300" height="200">
+        </div>
+      </div>
+    
+      <div class="column expo">
+        <div class="content">
+          <img src="Images2/img7.jpg" alt="Car" width="300" height="200">
+        </div>
+      </div>
+      <div class="column expo">
+        <div class="content">
+        <img src="Images2/img8.jpg" alt="Car" width="300" height="200">
+        </div>
+      </div>
+      <div class="column expo">
+        <div class="content">
+        <img src="Images2/img9.jpg" alt="Car" width="300" height="200">
+        </div>
+      </div>
+    <!-- END GRID -->
+    </div>
+    
+    <!-- END MAIN -->
+    </div>
+</fieldset>
+
+<fieldset id="teams">
+  <p id="lead">Team</p>
+  <h5>Our Team is always here to serve you.</h5>
+  <hr style="width:6%; margin-left:650px;">
+  <div class="grid-container3">
+    <div class="grid-item3"><img src="Images/per1.jpg" alt="Chairperson" width="220" height="200"></div>
+    <div class="grid-item3"><img src="Images/per2.jpg" alt="Advisor" width="220" height="200"></div>
+    <div class="grid-item3"><img src="Images/per3.jpg" alt="Accountant" width="220" height="200"></div>  
+    <div class="grid-item3"><img src="Images/per4.jpg" alt="Travel_Advisor" width="220" height="200"></div>
+  </div>
+</fieldset>
+
+<fieldset id="clients">
+  <p id="client">Clients</p>
+  <h5>They trusted us to serve so.</h5>
+  <hr style="width:6%; margin-left:650px;">
+  <div class="grid-container4">
+    <div class="grid-item4"><img src="Images/logo1.jpg" alt="Chairperson" width="200" height="100"></div>
+    <div class="grid-item4"><img src="Images/logo2.jpg" alt="Advisor" width="200" height="100"></div>
+    <div class="grid-item4"><img src="Images/logo3.jpg" alt="Accountant" width="200" height="100"></div>  
+    <div class="grid-item4"><img src="Images/logo4.jpg" alt="Travel_Advisor" width="200" height="100"></div>
+    <div class="grid-item4"><img src="Images/logo5.jpg" alt="Travel_Advisor" width="200" height="100"></div>
+    <div class="grid-item4"><img src="Images/logo6.jpg" alt="Travel_Advisor" width="200" height="100"></div>
+  </div>
+</fieldset>
+
+  <section>
+    <div class="container text-center text-md-start mt-5">
+      
+      <div class="row mt-3">
+      
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          
+          <h6 class="text-uppercase fw-bold mb-4" id="conta">
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+          </i>Beach Walks
+          </h6>
+          
+            15 <sup>th</sup> Floor, Kingdom Towers,<br> Sir Mohammed Bin Zayed Highway <br> Dubai
+            <p>Hot-line: +971-50-500-6580</p>
+            <p> E-mail: info@beachwalks.ae </p>
+            
+          
+        </div>
+        
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+        
+          <h6 class="text-uppercase fw-bold mb-4">
+            Products
+          </h6>
+          <p>
+            <i  class="fa fa-angle-double-right" aria-hidden="true"></i><a href="#!" class="text-reset">Angular</a>
+          </p>
+          <p>
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i><a href="#!" class="text-reset">React</a>
+          </p>
+          <p>
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i><a href="#!" class="text-reset">Vue</a>
+          </p>
+          <p>
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i><a href="#!" class="text-reset">Laravel</a>
+          </p>
+        </div>
+       
+
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+       
+          <h6 class="text-uppercase fw-bold mb-4">
+           Links
+          </h6>
+          <p>
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i><a href="#!" class="text-reset">Pricing</a>
+          </p>
+          <p>
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i><a href="#!" class="text-reset">Settings</a>
+          </p>
+          <p>
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i><a href="#!" class="text-reset">Orders</a>
+          </p>
+          <p>
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i><a href="#!" class="text-reset">Help</a>
+          </p>
+        </div>
+       
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          
+          <h6 class="text-uppercase fw-bold mb-4">Follow Us </h6>
+          <p> Explore our Social Media to know more facts</p>
+          <i id="icons" class="fa-brands fa-facebook" style="color:blue;"></i>
+          <i id="icons" class="fa-brands fa-twitter" style="color:#1DA1F2;"></i>
+          <i id="icons" class="fa-brands fa-instagram" style="color:#8a3ab9;"></i>
+          <i id="icons" class="fa-brands fa-linkedin" style="color:#0072b1;"></i>
+          <i id="icons" class="fa-brands fa-skype" style="color: #00aff0;"></i>
+        
+            
+          
+        </div>
+        
+      </div>
+      
+    </div>
+  </section>
+  
+
+<script>
+  function initMap() {
+    var options = {
+      zoom: 15,
+      center: { lat: 25.218460, lng: 55.279171 },
+    };
+    var map = new google.maps.Map(document.getElementById("map"), options);
+    var marker = new google.maps.Marker({
+      position: { lat: 25.218460, lng: 55.279171 },
+      map: map,
+    });
+  }
+</script>
+
+<script>
+  const get=document.getElementById("getbut");
+const button=document.button;
+
+
+color=["#87CEEB","white","orange","green","yellow","purple","blue","black","red"];
+button.style.background=color[0];
+function changeButton(){
+
+    const colorIndex=Math.floor(Math.random()*color.length);
+    getbut.style.backgroundColor=color[colorIndex];
+};
+</script>
+<!-- Contact section begins here -->
+
+  <div id="fot1"><i class="fa-regular fa-copyright"></i>All Rights Reserved To Beach Walks.</div> 
+  <div id="fot2">Designed by Anbashayan <a href="#top"><i class="fa-solid fa-arrow-up"></i></a></div>
+</footer>
+<script src="index.js"></script>
+      <script src="js/bootstrap.bundle.js"></script>
+      <link rel="stylesheet" href="index.css">
+      
+    </script>
+</body>
+</html>

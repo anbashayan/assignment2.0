@@ -1,0 +1,147 @@
+.navbar-nav{
+    padding-left: 400px;
+   
+}
+.welcome{
+    background-color: lightblue;
+}
+.navbar-brand{
+    padding-left: 150px;
+}
+#navbarNav{
+  padding-left:160px;
+}
+.button{
+background-color:#eb5d1e;
+  border: none;
+  color: white;
+  padding: 5px 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  border-radius:25px;
+  margin-top: -100px;
+}
+.container-fluid{
+    display:inline-block;
+}
+.start{
+    border: radius 10px;
+    background-color:#eb5d1e;
+}
+
+#img1{
+  margin-left:120px;
+}
+#make{
+  float:right;
+  margin-right:90px;
+}
+
+h6{
+  font-size: 24px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+  padding: 10px;
+}
+.grid-container2 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+.grid-item2 {
+  padding: 20px;
+}
+
+.grid-container3{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 10px;
+}
+.grid-item3{
+  padding: 10px;
+}
+.grid-container4{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  padding: 5px;
+}
+.grid-item4{
+  padding: 5px;
+}
+ #teams{
+  background-color: #8f827f;
+ }
+#clients{
+  background-color: #9a9b9f;
+}
+#ports{
+  background-color:#c8bb91;
+}
+#lead,#client{
+  text-align: center;
+}
+ 
+  #icons{
+    padding:5px;
+  }
+ img{
+  border-radius:8px;
+ }
+ 
+ #check{
+  text-align:center
+ }
+
+#port,#team{
+  text-align: center;
+  color:grey;
+}
+  
+#check{
+  text-align:center;
+}
+
+
+#img1{
+  float:left;
+}
+
+#port{
+  text-align: center;
+}
+h5{
+  text-align: center;
+}
+#fot1{
+  float:left;
+  margin-left: 50px;
+
+}
+
+#fot2{
+  float:right;
+  margin-right:50px;
+ 
+}
+
+#arrow3{
+  margin-left: -10px;
+}
+
+#icons{
+  padding:5px;
+  font-size: 30px;
+}
+
+#folio{
+  background-color: #bca992;
+}
+#burj{
+ 
+  padding-left: 900px;
+  background-color: lightblue;
+}
